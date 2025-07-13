@@ -1,0 +1,91 @@
+/* Center page */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #fdf6ec;
+  font-family: 'Nunito', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Fade-in animation */
+.container {
+  width: 960px;
+  height: 540px;
+  background-color: #fffaf3;
+  padding: 2rem;
+  box-sizing: border-box;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Typography */
+h1, h2 {
+  color: #5e4b3c;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: #3e2f24;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 90%;
+  margin: 0.5rem 0;
+}
+
+.tip {
+  font-style: italic;
+  color: #7a5e4b;
+  margin-top: 1rem;
+}
+
+.tip strong {
+  font-weight: 700;
+  color: #3e2f24;
+}
+
+.warning {
+  color: #aa3b3b;
+  font-weight: bold;
+}
+
+/* Buttons */
+button {
+  background-color: #e2cfc3;
+  color: #3e2f24;
+  border: none;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #d6bfae;
+  transform: scale(1.03);
+}
+
+/* Choice buttons */
+.choice-group {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
